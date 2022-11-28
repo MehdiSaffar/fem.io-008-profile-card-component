@@ -5,18 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>007 3-column card component</title>
+    <title>008 Profile card component</title>
     <script type="module" src="./style.scss"></script>
     <style>
       .attribution {
         font-size: 11px;
         text-align: center;
-        color: lightslategray;
+        color: white;
         margin-top: 1rem;
       }
       .attribution a {
@@ -25,19 +22,32 @@
     </style>
   </head>
   <body>
-    <main class="articles">
-    Victor Crest
-    26
-    London
-
-    80K
-    Followers
-
-    803K
-    Likes
-
-    1.4K
-    Photos
+    <main class="profile">
+      <div class="profile__banner"></div>
+      <div class="profile__img-wrap">
+        <img src="./images/image-victor.jpg" alt="Profile picture of Victor Crest" class="profile__img" />
+      </div>
+      <div class="profile__content">
+        <span class="profile__name">Victor Crest</span>
+        <span class="profile__age">26</span>
+        <p class="profile__location">London</p>
+      </div>
+      <hr />
+      <div class="profile__stats">
+        <div class="profile__stat">
+          <p class="profile__stat__label">Followers</p>
+          <p class="profile__stat__value">80K</p>
+        </div>
+        <div class="profile__stat">
+          <p class="profile__stat__label">Likes</p>
+          <p class="profile__stat__value">803K</p>
+        </div>
+        <div class="profile__stat">
+          <p class="profile__stat__label">Photos</p>
+          <p class="profile__stat__value">1.4K</p>
+        </div>
+      </div>
+    </main>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="https://github.com/MehdiSaffar">Mehdi Saffar</a>.
